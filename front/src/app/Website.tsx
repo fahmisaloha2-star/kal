@@ -319,7 +319,7 @@ function Navbar() {
 
           {/* Logo */}
           <Link to="/" onClick={closeMenu} aria-label="Retour à l'accueil" className="flex items-center flex-shrink-0 group">
-            <img src="/logo-2marchi.jpg" alt="2M ARCHI" className="h-12 w-auto object-contain transition-transform group-hover:scale-105 rounded-md" />
+            <img src="/logo-2marchi.jpg" alt="2M ARCHI" className="h-12 w-auto object-contain transition-transform group-hover:scale-105 rounded-md mix-blend-multiply" />
           </Link>
 
           {/* Nav links – desktop */}
@@ -393,11 +393,7 @@ function Navbar() {
           {/* Header */}
           <div className="flex items-center justify-between px-6 h-[72px] border-b border-[#DDD7D0] flex-shrink-0">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-                style={{ background: `linear-gradient(135deg, ${GOLD}25, ${GOLD}10)`, border: `1.5px solid ${GOLD}55` }}>
-                <span style={{ fontFamily: FD, fontSize: 14, fontWeight: 700, color: GOLD }}>2M</span>
-              </div>
-              <span style={{ fontFamily: FD, fontSize: 19, fontWeight: 700, color: "#1F1F1F" }}>2M ARCHI</span>
+              <img src="/logo-2marchi.jpg" alt="2M ARCHI" className="h-10 w-auto object-contain rounded-md mix-blend-multiply" />
             </div>
             <button
               onClick={() => setMobileOpen(false)}
